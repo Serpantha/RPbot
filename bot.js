@@ -1,24 +1,29 @@
-const Discord = require("discord.js");
+const Discord = require('discord.js');
+
 const client = new Discord.Client();
 
-client.on("ready", () => {
-  console.log("Ready to educate!.");
-});
+ 
 
-client.on("message", (message) => {
-  if (message.content.startsWith("!metagaming")) {
-    message.channel.send("Metagaming: Using information obtained through OOC means IC. ");
-  } 
+client.on('ready', () => {
 
-  if (message.content.startsWith("!godmodding")) {
-    message.channel.send("Godmodding: Any attempt at giving a roleplaying character an advantage that does not normally exist in-game, or overpowering a character.");
-  }
-
-  if (message.content.startsWith("!para")) {
-    message.channel.send("Para: A posting style where each post is a paragraph in length.");
-  }
+    console.log('I am ready!');
 
 });
 
+ 
 
-client.login("process.env.NDQ0NDExNDY0MzI1NzkxNzU0.DdbiNA.ys5RV2mNy0vHzsVBfFZzpv1bPkU");
+client.on('message', message => {
+
+    if (message.content === '!hello') {
+
+       message.reply('Hello! I am RP bot!');
+
+       }
+
+});
+
+ 
+
+// THIS  MUST  BE  THIS  WAY
+
+client.login(process.env.NDQ0NDExNDY0MzI1NzkxNzU0.DdbiNA.ys5RV2mNy0vHzsVBfFZzpv1bPkU);
