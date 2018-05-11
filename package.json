@@ -6,11 +6,11 @@
 
   "version": "0.0.0",
 
-  "main": "RPbot.js",
+  "main": "bot.js",
 
   "scripts": {
 
-    "start": "node RPbot.js"
+    "start": "node bot.js"
 
   },
 
