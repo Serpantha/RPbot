@@ -1,1 +1,1 @@
-worker.node RPbot.js
+worker: node bot.js
